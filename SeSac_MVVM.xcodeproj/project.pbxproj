@@ -28,6 +28,7 @@
 		8EDC8D2E2B87A70000C3C685 /* NetFlixTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2D2B87A70000C3C685 /* NetFlixTextField.swift */; };
 		8EDC8D302B87A88300C3C685 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2F2B87A88300C3C685 /* SignUpViewModel.swift */; };
 		8EDC8D322B87A89800C3C685 /* SignUpObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */; };
+		8EDC8D352B87B06A00C3C685 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC8D342B87B06A00C3C685 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDC8D352B87B06A00C3C685 /* Toast in Frameworks */,
 				8EDC8D092B87867C00C3C685 /* SnapKit in Frameworks */,
 				8EDC8D0E2B87868600C3C685 /* Then in Frameworks */,
 				8EDC8D0B2B87867C00C3C685 /* SnapKit-Dynamic in Frameworks */,
@@ -233,6 +235,7 @@
 				8EDC8D082B87867C00C3C685 /* SnapKit */,
 				8EDC8D0A2B87867C00C3C685 /* SnapKit-Dynamic */,
 				8EDC8D0D2B87868600C3C685 /* Then */,
+				8EDC8D342B87B06A00C3C685 /* Toast */,
 			);
 			productName = SeSac_MVVM;
 			productReference = 8EDC8CEA2B8785A400C3C685 /* SeSac_MVVM.app */;
@@ -265,6 +268,7 @@
 			packageReferences = (
 				8EDC8D072B87867C00C3C685 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8EDC8D0C2B87868600C3C685 /* XCRemoteSwiftPackageReference "Then" */,
+				8EDC8D332B87B06A00C3C685 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 8EDC8CEB2B8785A400C3C685 /* Products */;
 			projectDirPath = "";
@@ -558,6 +562,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		8EDC8D332B87B06A00C3C685 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -575,6 +587,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8EDC8D0C2B87868600C3C685 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		8EDC8D342B87B06A00C3C685 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EDC8D332B87B06A00C3C685 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

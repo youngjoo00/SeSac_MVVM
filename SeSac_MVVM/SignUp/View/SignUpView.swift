@@ -8,7 +8,11 @@
 import UIKit
 import Then
 
-class SignUpView: BaseView {
+final class SignUpView: BaseView {
+    
+    let viewModel = SignUpViewModel()
+    
+    var completionSignUp: ((String) -> Void)?
     
     let titleLabel = UILabel().then {
         $0.text = "NETFLIX"
@@ -16,7 +20,7 @@ class SignUpView: BaseView {
         $0.textColor = .systemRed
     }
     
-    let stackView = UIStackView().then {
+    private let stackView = UIStackView().then {
         $0.axis = .vertical
         $0.distribution = .fillEqually
         $0.spacing = 16
@@ -24,6 +28,11 @@ class SignUpView: BaseView {
     
     let emailTextField = NetFlixTextField().then {
         $0.configureView("이메일 주소 또는 전화번호")
+    }
+    
+    let emailReslutLabel = UILabel().then {
+        $0.font = .systemFont(ofSize: 15)
+        $0.textColor = .systemRed
     }
     
     let passwordTextField = NetFlixTextField().then {
@@ -42,14 +51,23 @@ class SignUpView: BaseView {
         $0.configureView("추천 코드 입력")
     }
     
+    let signUpBtn = UIButton().then {
+        $0.setTitle("회원가입", for: .normal)
+        $0.setTitleColor(.black, for: .normal)
+        $0.backgroundColor = .white
+        $0.layer.cornerRadius = 8
+    }
+    
     override func configureHierarchy() {
         [
             titleLabel,
-            stackView
+            stackView,
+            signUpBtn,
         ].forEach { addSubview($0) }
         
         [
             emailTextField,
+            emailReslutLabel,
             passwordTextField,
             nicknameTextField,
             locationTextField,
@@ -72,9 +90,34 @@ class SignUpView: BaseView {
             make.horizontalEdges.equalTo(safeAreaLayoutGuide).inset(16)
             make.height.equalTo(44)
         }
+        
+        signUpBtn.snp.makeConstraints { make in
+            make.top.equalTo(stackView.snp.bottom).offset(20)
+            make.horizontalEdges.equalTo(safeAreaLayoutGuide).inset(16)
+            make.height.equalTo(50)
+        }
     }
     
     override func configureView() {
         
+        // 들어오자마자 클로져를 실행시킴
+        viewModel.outputResult.bind { value in
+            self.emailReslutLabel.text = value
+        }
+        
     }
+    
+    @objc func textFieldChanged() {
+        viewModel.inputText.text = emailTextField.text!
+    }
+    
+    @objc func didSignUpBtnTapped() {
+        // 이메일 유효성 검사가 완료됐다면 성공
+        if viewModel.outputResult.text == "일단은 통과" {
+            completionSignUp?("회원가입 성공!")
+        } else {
+            completionSignUp?("회원가입 실패!")
+        }
+    }
+    
 }

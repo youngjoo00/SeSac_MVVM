@@ -10,7 +10,7 @@ import UIKit
 
 final class NumberValidViewController: BaseViewController {
     
-    let mainView = NumberValidView()
+    private let mainView = NumberValidView()
     
     override func loadView() {
         self.view = mainView
