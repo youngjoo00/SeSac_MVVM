@@ -13,7 +13,7 @@
 		8EDC8CF52B8785A400C3C685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC8CF32B8785A400C3C685 /* Main.storyboard */; };
 		8EDC8CF72B8785A500C3C685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC8CF62B8785A500C3C685 /* Assets.xcassets */; };
 		8EDC8CFA2B8785A500C3C685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC8CF82B8785A500C3C685 /* LaunchScreen.storyboard */; };
-		8EDC8D032B87863900C3C685 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D022B87863900C3C685 /* TestViewController.swift */; };
+		8EDC8D032B87863900C3C685 /* NumberValidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D022B87863900C3C685 /* NumberValidViewController.swift */; };
 		8EDC8D062B87865600C3C685 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D052B87865600C3C685 /* BaseViewController.swift */; };
 		8EDC8D092B87867C00C3C685 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC8D082B87867C00C3C685 /* SnapKit */; };
 		8EDC8D0B2B87867C00C3C685 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC8D0A2B87867C00C3C685 /* SnapKit-Dynamic */; };
@@ -21,9 +21,13 @@
 		8EDC8D102B87870000C3C685 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D0F2B87870000C3C685 /* BaseView.swift */; };
 		8EDC8D132B87879500C3C685 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D122B87879500C3C685 /* TabBarController.swift */; };
 		8EDC8D192B87880800C3C685 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D182B87880800C3C685 /* SignUpViewController.swift */; };
-		8EDC8D1B2B87893E00C3C685 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D1A2B87893E00C3C685 /* TestView.swift */; };
+		8EDC8D1B2B87893E00C3C685 /* NumberValidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D1A2B87893E00C3C685 /* NumberValidView.swift */; };
 		8EDC8D1F2B87922100C3C685 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D1E2B87922100C3C685 /* NumberViewModel.swift */; };
-		8EDC8D222B87945300C3C685 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D212B87945300C3C685 /* Observable.swift */; };
+		8EDC8D222B87945300C3C685 /* NumberValidObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D212B87945300C3C685 /* NumberValidObservable.swift */; };
+		8EDC8D2B2B87A08100C3C685 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2A2B87A08100C3C685 /* SignUpView.swift */; };
+		8EDC8D2E2B87A70000C3C685 /* NetFlixTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2D2B87A70000C3C685 /* NetFlixTextField.swift */; };
+		8EDC8D302B87A88300C3C685 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2F2B87A88300C3C685 /* SignUpViewModel.swift */; };
+		8EDC8D322B87A89800C3C685 /* SignUpObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,14 +39,18 @@
 		8EDC8CF62B8785A500C3C685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EDC8CF92B8785A500C3C685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EDC8CFB2B8785A500C3C685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EDC8D022B87863900C3C685 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		8EDC8D022B87863900C3C685 /* NumberValidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValidViewController.swift; sourceTree = "<group>"; };
 		8EDC8D052B87865600C3C685 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8EDC8D0F2B87870000C3C685 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		8EDC8D122B87879500C3C685 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8EDC8D182B87880800C3C685 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		8EDC8D1A2B87893E00C3C685 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		8EDC8D1A2B87893E00C3C685 /* NumberValidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValidView.swift; sourceTree = "<group>"; };
 		8EDC8D1E2B87922100C3C685 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
-		8EDC8D212B87945300C3C685 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		8EDC8D212B87945300C3C685 /* NumberValidObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValidObservable.swift; sourceTree = "<group>"; };
+		8EDC8D2A2B87A08100C3C685 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8EDC8D2D2B87A70000C3C685 /* NetFlixTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlixTextField.swift; sourceTree = "<group>"; };
+		8EDC8D2F2B87A88300C3C685 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				8EDC8CEC2B8785A400C3C685 /* SeSac_MVVM */,
+				8EDC8D2C2B87A6E200C3C685 /* CustomView */,
 				8EDC8D042B87864700C3C685 /* Base */,
 				8EDC8CEB2B8785A400C3C685 /* Products */,
 			);
@@ -80,9 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				8EDC8D112B87878C00C3C685 /* TabBar */,
-				8EDC8D012B8785CE00C3C685 /* View */,
-				8EDC8D1D2B8791C900C3C685 /* ViewModel */,
-				8EDC8D202B87944400C3C685 /* Observer */,
+				8EDC8D232B879EE700C3C685 /* NumberValid */,
+				8EDC8D242B879F0400C3C685 /* SignUp */,
 				8EDC8CED2B8785A400C3C685 /* AppDelegate.swift */,
 				8EDC8CEF2B8785A400C3C685 /* SceneDelegate.swift */,
 				8EDC8CF12B8785A400C3C685 /* ViewController.swift */,
@@ -97,8 +105,7 @@
 		8EDC8D012B8785CE00C3C685 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8EDC8D152B8787C300C3C685 /* SignUp */,
-				8EDC8D142B8787BD00C3C685 /* Test */,
+				8EDC8D1A2B87893E00C3C685 /* NumberValidView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,23 +127,6 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		8EDC8D142B8787BD00C3C685 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				8EDC8D1A2B87893E00C3C685 /* TestView.swift */,
-				8EDC8D022B87863900C3C685 /* TestViewController.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		8EDC8D152B8787C300C3C685 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				8EDC8D182B87880800C3C685 /* SignUpViewController.swift */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
 		8EDC8D1D2B8791C900C3C685 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,9 +138,79 @@
 		8EDC8D202B87944400C3C685 /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				8EDC8D212B87945300C3C685 /* Observable.swift */,
+				8EDC8D212B87945300C3C685 /* NumberValidObservable.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		8EDC8D232B879EE700C3C685 /* NumberValid */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D1D2B8791C900C3C685 /* ViewModel */,
+				8EDC8D252B879F3F00C3C685 /* Controller */,
+				8EDC8D012B8785CE00C3C685 /* View */,
+				8EDC8D202B87944400C3C685 /* Observer */,
+			);
+			path = NumberValid;
+			sourceTree = "<group>";
+		};
+		8EDC8D242B879F0400C3C685 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D262B87A05000C3C685 /* ViewModel */,
+				8EDC8D272B87A05A00C3C685 /* Controller */,
+				8EDC8D282B87A06000C3C685 /* View */,
+				8EDC8D292B87A06900C3C685 /* Observer */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		8EDC8D252B879F3F00C3C685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D022B87863900C3C685 /* NumberValidViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EDC8D262B87A05000C3C685 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D2F2B87A88300C3C685 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EDC8D272B87A05A00C3C685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D182B87880800C3C685 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EDC8D282B87A06000C3C685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D2A2B87A08100C3C685 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EDC8D292B87A06900C3C685 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		8EDC8D2C2B87A6E200C3C685 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				8EDC8D2D2B87A70000C3C685 /* NetFlixTextField.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,15 +293,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EDC8D222B87945300C3C685 /* Observable.swift in Sources */,
+				8EDC8D222B87945300C3C685 /* NumberValidObservable.swift in Sources */,
 				8EDC8D062B87865600C3C685 /* BaseViewController.swift in Sources */,
 				8EDC8CF22B8785A400C3C685 /* ViewController.swift in Sources */,
 				8EDC8D192B87880800C3C685 /* SignUpViewController.swift in Sources */,
 				8EDC8CEE2B8785A400C3C685 /* AppDelegate.swift in Sources */,
 				8EDC8D102B87870000C3C685 /* BaseView.swift in Sources */,
+				8EDC8D302B87A88300C3C685 /* SignUpViewModel.swift in Sources */,
 				8EDC8D132B87879500C3C685 /* TabBarController.swift in Sources */,
-				8EDC8D1B2B87893E00C3C685 /* TestView.swift in Sources */,
-				8EDC8D032B87863900C3C685 /* TestViewController.swift in Sources */,
+				8EDC8D2B2B87A08100C3C685 /* SignUpView.swift in Sources */,
+				8EDC8D2E2B87A70000C3C685 /* NetFlixTextField.swift in Sources */,
+				8EDC8D1B2B87893E00C3C685 /* NumberValidView.swift in Sources */,
+				8EDC8D032B87863900C3C685 /* NumberValidViewController.swift in Sources */,
+				8EDC8D322B87A89800C3C685 /* SignUpObservable.swift in Sources */,
 				8EDC8CF02B8785A400C3C685 /* SceneDelegate.swift in Sources */,
 				8EDC8D1F2B87922100C3C685 /* NumberViewModel.swift in Sources */,
 			);

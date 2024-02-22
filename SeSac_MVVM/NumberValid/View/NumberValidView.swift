@@ -7,8 +7,9 @@
 
 // View 역할
 import UIKit
+import Then
 
-final class TestView: BaseView {
+final class NumberValidView: BaseView {
     
     let viewModel = NumberViewModel()
 

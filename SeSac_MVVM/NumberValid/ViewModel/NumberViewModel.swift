@@ -10,8 +10,8 @@ import Foundation
 
 class NumberViewModel {
     
-    var inputText = Observable("")
-    var outputResult = Observable("")
+    var inputText = NumberValidObservable("")
+    var outputResult = NumberValidObservable("")
     
     init() {
         // inputText 의 text 를 "" 로 초기화 했으니, "" 라는 string 값을 들고 있어서 호출이 가능하다.

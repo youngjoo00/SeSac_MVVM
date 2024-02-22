@@ -6,9 +6,11 @@
 //
 
 // Controller 역할
-final class TestViewController: BaseViewController {
+import UIKit
+
+final class NumberValidViewController: BaseViewController {
     
-    let mainView = TestView()
+    let mainView = NumberValidView()
     
     override func loadView() {
         self.view = mainView

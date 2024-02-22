@@ -12,8 +12,8 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let firstTab = UINavigationController(rootViewController: TestViewController())
-        let firstTabBarItem = UITabBarItem(title: "Test", image: UIImage(systemName: "house"), tag: 0)
+        let firstTab = UINavigationController(rootViewController: NumberValidViewController())
+        let firstTabBarItem = UITabBarItem(title: "Valid", image: UIImage(systemName: "house"), tag: 0)
         firstTab.tabBarItem = firstTabBarItem
         
         let secondTab = UINavigationController(rootViewController: SignUpViewController())
