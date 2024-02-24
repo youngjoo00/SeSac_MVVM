@@ -9,22 +9,38 @@ import Foundation
 
 final class SignUpViewModel {
     
-    var inputText = SignUpObservable("")
-    var outputResult = SignUpObservable("")
+    var inputEmail = Observable("")
+    var inputPassword = Observable("")
+    
+    var outputValidation = Observable("")
+    var outputValid = Observable(false)
     
     init() {
-        inputText.bind { value in
-            self.validation(value)
+        inputEmail.bind { value in
+            self.validation(email: value, password: self.inputPassword.value)
+        }
+        
+        inputPassword.bind { value in
+            self.validation(email: self.inputEmail.value, password: value)
         }
     }
     
-    private func validation(_ text: String) {
+    private func validation(email: String, password: String) {
         
-        if text.isEmpty {
-            outputResult.text = "이메일 입력은 필수입니다."
-        } else {
-            outputResult.text = "일단은 통과"
+        guard email.isValidEmail() else {
+            self.outputValidation.value = "유효한 이메일 형식이 아닙니다."
+            self.outputValid.value = false
+            return
         }
         
+        guard password.count >= 6 else {
+            self.outputValidation.value = "비밀번호는 6자 이상이어야 합니다."
+            self.outputValid.value = false
+            return
+        }
+        
+        self.outputValidation.value = "모든 조건이 만족합니다!"
+        self.outputValid.value = true
     }
+    
 }

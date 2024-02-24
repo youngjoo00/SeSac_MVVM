@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E42F0C92B89BD740038D091 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42F0C82B89BD740038D091 /* String+Extension.swift */; };
 		8EDC8CEE2B8785A400C3C685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8CED2B8785A400C3C685 /* AppDelegate.swift */; };
 		8EDC8CF02B8785A400C3C685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8CEF2B8785A400C3C685 /* SceneDelegate.swift */; };
 		8EDC8CF22B8785A400C3C685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8CF12B8785A400C3C685 /* ViewController.swift */; };
@@ -27,11 +28,12 @@
 		8EDC8D2B2B87A08100C3C685 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2A2B87A08100C3C685 /* SignUpView.swift */; };
 		8EDC8D2E2B87A70000C3C685 /* NetFlixTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2D2B87A70000C3C685 /* NetFlixTextField.swift */; };
 		8EDC8D302B87A88300C3C685 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D2F2B87A88300C3C685 /* SignUpViewModel.swift */; };
-		8EDC8D322B87A89800C3C685 /* SignUpObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */; };
+		8EDC8D322B87A89800C3C685 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC8D312B87A89800C3C685 /* Observable.swift */; };
 		8EDC8D352B87B06A00C3C685 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 8EDC8D342B87B06A00C3C685 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E42F0C82B89BD740038D091 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		8EDC8CEA2B8785A400C3C685 /* SeSac_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSac_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDC8CED2B8785A400C3C685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDC8CEF2B8785A400C3C685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +53,7 @@
 		8EDC8D2A2B87A08100C3C685 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8EDC8D2D2B87A70000C3C685 /* NetFlixTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlixTextField.swift; sourceTree = "<group>"; };
 		8EDC8D2F2B87A88300C3C685 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpObservable.swift; sourceTree = "<group>"; };
+		8EDC8D312B87A89800C3C685 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +71,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E42F0C72B89BD660038D091 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E42F0C82B89BD740038D091 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8EDC8CE12B8785A400C3C685 = {
 			isa = PBXGroup;
 			children = (
 				8EDC8CEC2B8785A400C3C685 /* SeSac_MVVM */,
+				8E42F0C72B89BD660038D091 /* Extension */,
 				8EDC8D2C2B87A6E200C3C685 /* CustomView */,
 				8EDC8D042B87864700C3C685 /* Base */,
 				8EDC8CEB2B8785A400C3C685 /* Products */,
@@ -202,7 +213,7 @@
 		8EDC8D292B87A06900C3C685 /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				8EDC8D312B87A89800C3C685 /* SignUpObservable.swift */,
+				8EDC8D312B87A89800C3C685 /* Observable.swift */,
 			);
 			path = Observer;
 			sourceTree = "<group>";
@@ -297,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E42F0C92B89BD740038D091 /* String+Extension.swift in Sources */,
 				8EDC8D222B87945300C3C685 /* NumberValidObservable.swift in Sources */,
 				8EDC8D062B87865600C3C685 /* BaseViewController.swift in Sources */,
 				8EDC8CF22B8785A400C3C685 /* ViewController.swift in Sources */,
@@ -309,7 +321,7 @@
 				8EDC8D2E2B87A70000C3C685 /* NetFlixTextField.swift in Sources */,
 				8EDC8D1B2B87893E00C3C685 /* NumberValidView.swift in Sources */,
 				8EDC8D032B87863900C3C685 /* NumberValidViewController.swift in Sources */,
-				8EDC8D322B87A89800C3C685 /* SignUpObservable.swift in Sources */,
+				8EDC8D322B87A89800C3C685 /* Observable.swift in Sources */,
 				8EDC8CF02B8785A400C3C685 /* SceneDelegate.swift in Sources */,
 				8EDC8D1F2B87922100C3C685 /* NumberViewModel.swift in Sources */,
 			);
